@@ -74,7 +74,7 @@ public class ProdottoController {
 					} catch (NumberFormatException e) {
 						e.printStackTrace();
 
-						model.addAttribute("errorOccured", true);
+						model.addAttribute("searchError", true);
 						model.addAttribute("message", "errore nei dati: prezzo");
 						model.addAttribute("searchProdottoForm", searchProdotto);
 						return "ricercaProdotti";
